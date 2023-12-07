@@ -1,5 +1,5 @@
 html {
-    overflow-y: scroll;
+    overflow-y: scroll; /* This ensures scrollbar space is always accounted for */
     margin: 0;
     padding: 0;
 }
@@ -17,24 +17,24 @@ body {
     padding: 10px 25px;
     display: none;
     z-index: 99999;
-    background-color: white;
+    background-color: white; /* Default color */
     font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease;
-    margin: 0 auto;
+    transition: transform 0.5s ease; /* Smooth transition for transform */
+    margin: 0 auto; /* Center align */
     box-sizing: border-box;
-    max-width: 90%;
+    max-width: 90%; /* or some suitable width */
     margin-left: auto;
     margin-right: auto;
 }
 #ccp:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Moves up slightly when hovered */
 }
 #ccp:not(:hover) {
-    transform: translateY(0);
+    transform: translateY(0); /* Return to original position */
     transition: transform 0.5s ease;
 }
 #ccp button {
@@ -47,7 +47,7 @@ body {
     background-color: transparent;
     font-family: Arial, sans-serif;
     font-size: 0.8rem;
-    color: black;
+    color: black; /* Default text color */
     border: 0px;
     transition: color 0.3s;
 }
@@ -64,6 +64,7 @@ body {
     font-size: 0.7rem;
     font-weight: 500;
 }
+/* Media query for mobile devices */
 @media screen and (max-width: 768px) {
     #ccp {
         left: 0;
