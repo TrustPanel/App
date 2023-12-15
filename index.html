@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Set and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Page Title -->
+    <title>Cookie Preferences</title>
+</head>
+<body>
+    <!-- Cookie Consent Banner Section -->
+    <nav id="ccp" aria-label="Cookie Consent">
+        <!-- Banner Title -->
+        <h2 class="cookie-h1">We use cookies</h2>
+
+        <!-- Cookie Usage Description -->
+        <p class="cookie-info">We use cookies to enhance website functionality and provide you with a better user experience.</p>
+
+        <!-- Cookie Settings Buttons -->
+        <div class="button-group">
+            <button class="settings">Manage Cookies</button>
+            <button class="decline">Refuse All</button>
+            <button class="accept">Accept All</button>
+        </div>
+
+        <!-- Credit Link -->
+        <p class="powered-by">Powered by <a href="http://www.trustpanel.io/" target="_blank" rel="noopener noreferrer">TrustPanel</a></p>
+    </nav>
+
+    <!-- Cookie Settings Modal -->
+    <aside id="cookieModal" class="modal" role="dialog" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <div class="close" aria-label="Close">&times;</div>
+
+            <!-- Modal Heading -->
+            <h2 id="cookieModalLabel" class="cookie-h1">Cookie Preferences</h2>
+
+            <!-- Modal Description -->
+            <p class="cookie-info">Adjust your cookie settings below.</p>
+            
+            <!-- Essential Cookies Category -->
+            <section class="category">
+                <h3>
+                    Essential
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked disabled>
+                        <span class="slider"></span>
+                    </label>
+                </h3>
+                <p>These cookies are essential and cannot be disabled.</p>
+            </section>
+
+            <!-- Performance and Functionality Cookies Category -->
+            <section class="category">
+                <h3>
+                    Performance and Functionality
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </h3>
+                <p>We use these to provide important but non-essential features. Some functionality won't be available without them.</p>
+            </section>
+
+            <!-- Analytics Cookies Category -->
+            <section class="category">
+                <h3>
+                    Analytics
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </h3>
+                <p>These help us understand how our platform is used and where our visitors come from.</p>
+            </section>
+
+            <!-- Advertising Cookies Category -->
+            <section class="category">
+                <h3>
+                    Advertising
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </h3>
+                <p>We use these to make our adverts more relevant to our users and their interests.</p>
+            </section>
+
+            <!-- Save and Accept All Buttons -->
+            <div class="buttons-container">
+                <button id="savePreferences">Save</button>
+                <button id="acceptAll">Accept All</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
