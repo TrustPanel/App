@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Compliance by TrustPanel - https://www.trustpanel.io/</title>
     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TrustPanel/App@main/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TrustPanel/App@one/style.css">
 </head>
 <body>
-    <div id="ccp">
-        We use cookies.&nbsp;&nbsp;&nbsp;
-        <button class="accept">Accept all</button>
-        <button class="decline">Reject All</button>
-        <div class="powered-by">
-            Powered by <a href="http://www.trustpanel.io/" target="_blank">TrustPanel</a>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/gh/TrustPanel/App@main/script.js"></script>
+    <div id="external-content">Loading content...</div>
+    <script>
+        fetch('https://cdn.jsdelivr.net/gh/TrustPanel/App@one/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('external-content').innerHTML = data;
+            });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/TrustPanel/App@one/script.js"></script>
 </body>
 </html>
